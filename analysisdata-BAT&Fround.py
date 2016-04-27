@@ -13,9 +13,9 @@ for data in reader:
         #print data[4].decode("gbk"),data[1].decode("gbk")
         madeitlist.append(data[1])
 
-    # if any(i in BAT for i in data[6:]) and data[4] in stage:
-    #     # print data[4].decode("gbk"),data[1].decode("gbk")
-    #     madeitlist.append(data[1])
+    if any(i in BAT for i in data[6:]) and data[4] in stage:
+        # print data[4].decode("gbk"),data[1].decode("gbk")
+        madeitlist.append(data[1])
 
 madeitlist = list(set(madeitlist))#delete mutiples
 
